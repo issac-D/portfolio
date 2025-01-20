@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yishaq Damtew Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="intro">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <p>Hi, I'm <strong>Yishaq Damtew</strong>, a passionate software engineering student with a focus on web development. I aim to create impactful solutions for underdeveloped areas.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Python</span>
+            <span class="skill">C++</span>
+            <span class="skill">SQL</span>
+            <span class="skill">JavaScript</span>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div id="my-project">
+            <div id="first-project">
+                <div class="first-link">
+                    <h2 style="color: chocolate;"> project one </h2>
+                    <h3 style="color: brown;">To-Do-List Web Application.</h3>
+                    <p style="color: black;" >This project is the draft for a simple to do list web application.it can prform many tasks,such as registerig tasks with start and end dates.it helps a user to perform expected tasks within a given time frame.</p>
+                    <a style="color: blue;" href="pro1.html"><strong>you can check by clicking here!!</strong></a>
+                    <a href="pro1.html"><img style="border-radius: 20px; width: 95%; height: 200px;"src="pro1.jpeg" alt="project two"></a>
+                </div>
+            </div>
+            <div id="second-project">
+                <div>
+                    <h2>project two</h2>
+                    <p style="color: black;">This project is the project management tool. I made this by using HTML, CSS And JavaScript to give it a fully functionality.you can register and add a discription of your projects inorder to control the activities done on your project.</p>
+                    <a style="color: blue;" href="pro2.html"><strong>you can check by clicking here!!</strong></a>
+                    <a href="pro2.html"><img style="border-radius: 20px; width: 95%; height: 200px; "src="pro2.jpeg" alt="project two"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form" class="form">
+        <h2 style="color: yellowgreen;">Interested in Collaborating?</h2>
+        <form action="#home" method="post" class="project-form">
+            <label for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Full Name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" placeholder="email adress" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input class="input" type="tel" id="phone" name="phone" placeholder="phone number" required><br><br><br>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 style="text-align: center;">Contact Me</h2>
+        <p>Feel free to connect with me on the following platforms: <span style="color: rgb(2, 2, 66);">click on your choice!!!</span> </p>
+        <div class="contact-icons">
+            <a href="https://github.com/issac-D" target="_blank" class="contact-link">
+                <img src="github.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:yishaqdamtew986@gmail.com" class="contact-link">
+                <img src="gmail.png" alt="Email">
+                <span>Email</span>
+            </a>
+            <a href="https://www.youtube.com/@clevercoins-bd4b" target="_blank" class="contact-link">
+                <img src="youtube.png" alt="YouTube">
+                <span>YouTube</span>
+            </a>
+            <a href="https://instagram.com/issacd6" target="_blank" class="contact-link">
+                <img src="instagram.webp" alt="instagram">
+                <span>Instagram</span>
+            </a>
+            
+        </div>
+        <div>
+            <pre>
+            <p style="padding-top: 0px;">
+        you can use the following optional adresses too:
+            phone No = +251932805961
+            email    = yishaqdamtew986@gmail.com
+            </p>
+            </pre>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Yishaq Damtew. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="pro2.css">
+</head>
+<body>
+    <header>
+        <h1>Project Management</h1>
+        <nav>
+            <ul>
+                <li><a class="a"href="/portfolio.html/#home">Home</a></li>
+                <li><a class="a" href="/portfolio.html/#projects">Projects</a></li>
+                <li><a class="a" href="/portfolio.html/#about">About</a></li>
+                <li><a class="a" href="/portfolio.html/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Your Project Management Dashboard</h2>
+            <p>Manage your projects efficiently and effectively.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul id="project-list">
+                <!-- Projects will be dynamically added here -->
+            </ul>
+            <h3>Register New Project</h3>
+            <form id="project-form">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" required>
+                <label for="project-description">Project Description:</label>
+                <textarea id="project-description" required></textarea>
+                <button type="submit">Add Project</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Project Management. All rights reserved.</p>
+    </footer>
+    <script src="pro2.js"></script>
+</body>
+</html>
